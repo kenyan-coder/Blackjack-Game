@@ -8,10 +8,12 @@ let message = ""
 
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el")
+let cardsEl=document.getElementById("cards-el")
 
 // create a function to start the game
 function startGame() {
     sumEl.textContent="Sum: " + sum;
+    cardsEl.textContent="Cards: " + firstCard +" "+ secondCard;
     if (sum <= 20) {
         message = "Do you want to draw a new card? "
     } else if (sum === 21) {
@@ -24,4 +26,7 @@ function startGame() {
     //Display the message to the user.  
     messageEl.textContent = message;
 
+}
+function newCard(){
+    console.log("Drawing a new card from the deck!")
 }
