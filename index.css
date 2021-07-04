@@ -17,3 +17,8 @@ h1 {
     font-style: italic;    
    
 }
+button{
+    width: 150px;
+    background-color: goldenrod;
+    color: #016f32;
+}
