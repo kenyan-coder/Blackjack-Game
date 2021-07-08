@@ -51,7 +51,8 @@ function renderGame() {
     messageEl.textContent = message;
 
 }
-function newCard(){   
+function newCard(){ 
+    if(isAlive===true && hasBlackJack===false)  {
     //create a new card variable
     let newCard = getRandomCard()
     //update the sum variable
@@ -59,5 +60,5 @@ function newCard(){
     //push card into new array
     cards.push(newCard)
     renderGame()
-
+    }
 }
