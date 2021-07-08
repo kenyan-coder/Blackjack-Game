@@ -1,6 +1,6 @@
 let player ={
-    name:"Per Borgen",
-    chips:"$145"
+    name:"Borgen",
+    chips:"145"
 }
 
 //array of ordered cards
@@ -16,7 +16,7 @@ let cardsEl=document.getElementById("cards-el")
 let playerEl=document.getElementById("player-el")
 
 // 4. Render the player's name and chips in playerEl
-playerEl.textContent=player.name+ ": " +player.chips;
+playerEl.textContent=player.name+ ": $" +player.chips;
 
 function getRandomCard(){
     let randomCard= Math.floor(Math.random()*13) +1 
